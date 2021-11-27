@@ -1,0 +1,22 @@
+{
+  "name": "@kugatsu/utilities",
+  "version": "1.0.0",
+  "description": "Some helper to share",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "js",
+    "utils",
+    "helpers"
+  ],
+  "author": "Romain GABEL",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
