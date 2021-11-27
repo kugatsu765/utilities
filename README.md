@@ -1,32 +1,24 @@
-# @kugatsu/vueCompose
+# @kugatsu/utilities
 
-## useApi
+## search
 
-Composition function to get result and states of a api call
+Exposition
 
 #### Install
 
 ```shell
-yarn add @kugatsu/vueComposes
+yarn add @kugatsu/utilities
 ```
 
-#### How to use
+#### methods
 
 ```ts
-import { useApi } from "@kugatsu/vueComposes";
-import { apiFetchUsers } from "~/api"; // Your api to call () : Promise
-import { IUser } from "~/models"; // Model if you are using TS
-
-const {
-  exec: execUsers,
-  results: users,
-  loading,
-} = useApi<IUser, { active: boolean }>(apiFetchUsers, {
-  loader: true,
-  defaultValue: [],
-});
-
-function reloadUsers() {
-  execUsers({ active: true });
-}
+function searchsInArrayBySplit(
+  sources: Array<any>,
+  search: String,
+  spliter: string
+): any;
+function searchsInArray(sources: Array<any>, searchs: Array<string>): any;
+function searchInArray(sources: Array<any>, search: string): any[];
+function searchInObject(source: any, search: string): boolean;
 ```
