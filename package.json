@@ -1,12 +1,12 @@
 {
   "name": "@kugatsu/utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some helper to share",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "ts",
@@ -17,6 +17,9 @@
   "author": "Romain GABEL",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.2",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.5.2",
     "unbuild": "^0.5.13"
   }
