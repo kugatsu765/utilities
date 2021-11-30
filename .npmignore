@@ -2,7 +2,7 @@
 node_modules
 public
 src
-
+test
 
 # local env files
 .env.local
@@ -16,6 +16,7 @@ yarn-error.log*
 #build files
 build.config.ts
 tsconfig.json
+jest.config.js
 
 # Editor directories and files
 .idea
